@@ -15,6 +15,10 @@
 
 .id{
     display: flex;
-    background-color: aqua;
     margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-name{
+    font-family: Arial, Helvetica, sans-serif;
 }
