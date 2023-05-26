@@ -1,0 +1,37 @@
+.hero-card{
+    display: flex;
+    margin-bottom: 5px;    
+    width: 300px;
+    background-color: #E8E8E8;
+    border-radius: 8px;
+    height: 40px;
+}
+
+.name-container{
+    display: flex;
+    align-items: center;
+
+}
+
+.name{
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.id-container{
+    display: flex;
+    background-color: #434356;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+
+}
+
+.id{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+

@@ -1,0 +1,9 @@
+<div class="heroes-list">
+  <h2 class="title">My Heroes</h2>
+  <app-hero-list-item
+    *ngFor="let hero of heroes"
+    id="{{ hero.id }}"
+    name="{{ hero.name }}"
+    routerLink="{{hero.id}}"
+  ></app-hero-list-item>
+</div>
