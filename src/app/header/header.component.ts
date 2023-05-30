@@ -12,12 +12,10 @@ export class HeaderComponent {
   
   clickDashboard(){
     this.router.navigate(['']);
-    console.log("Dashboard clicked");
   }
 
   clickHeroes(){
     this.router.navigate(['/heroes']);
-    console.log("Heroes clicked");
   }
 
 }

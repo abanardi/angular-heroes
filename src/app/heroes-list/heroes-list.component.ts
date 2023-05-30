@@ -17,7 +17,4 @@ export class HeroesListComponent implements OnInit {
     this.heroService.getHeroes().subscribe((heroes) => this.heroes = heroes);
   }
   
-  // navigateDetails(id:number){
-  //   console.log("Clicked" + id);
-  // }
 }

@@ -1,8 +1,13 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Hero } from './Hero';
 import { Observable, of } from 'rxjs';
 
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type': 'application/json',
+  }),
+};
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +21,8 @@ export class HeroService {
     return this.http.get<Hero[]>(this.apiUrl);
   }
 
-  updateHeroName(): void{
-
+  updateHeroName(hero: Hero): Observable<Hero>{
+    const url = `${this.apiUrl}/${hero.id}`
+    return this.http.put<Hero>(url, hero, httpOptions);
   }
 }

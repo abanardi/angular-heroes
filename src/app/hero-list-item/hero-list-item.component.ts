@@ -8,7 +8,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class HeroListItemComponent {
   @Input() id:string | undefined;
   @Input() name:string | undefined;
-  @Output() cardClick: EventEmitter<number> = new EventEmitter();
+  // @Output() cardClick: EventEmitter<number> = new EventEmitter();
 
   // onClick(heroId: number){
   //   this.cardClick.emit(heroId);

@@ -1,11 +1,11 @@
 <div class="hero-details">
-    <h2 class="hero-name">MAGNETA Details</h2>
-    <div class="details-card">
-        <p class="id">id: {{heroId}}</p>
-        <form class="hero">
-            <h3>Hero name:</h3>
-            <input type="text">
-        </form>
-        <app-button text="Back" color="#E8E8E8"></app-button>
-    </div>
+  <h2 class="hero-name">{{showName}} Details</h2>
+  <div class="details-card">
+    <p class="id">id: {{ heroId }}</p>
+    <form class="hero" (ngSubmit)="submitHeroInfo()">
+      <h3>Hero name:</h3>
+      <input type="input" name="heroName" [(ngModel)]="heroName"/>
+    </form>
+    <app-button text="Back" color="#E8E8E8" (btnClick)="navigateBack()"></app-button>
+  </div>
 </div>

@@ -1,1 +1,4 @@
-<p>dashboard works!</p>
+<div class="heroes-dashboard">
+  <h2 class="title">Top Heroes</h2>
+  <app-dashboard-button *ngFor="let hero of heroes" text="{{ hero.name }}" color="#E8E8E8" heroId="{{hero.id}}" (btnClick)="navigateDetails($event)"></app-dashboard-button>
+</div>
